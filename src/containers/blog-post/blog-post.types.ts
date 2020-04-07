@@ -30,6 +30,6 @@ interface IBlogPostBase {
     url: string;
 }
 
-export interface IBlogPost
+declare interface IBlogPost
     extends Omit<React.HtmlHTMLAttributes<HTMLDivElement | HTMLSpanElement>, keyof IBlogPostBase>,
         IBlogPostBase {}
