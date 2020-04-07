@@ -1,0 +1,38 @@
+.navbar {
+    overflow: scroll;
+    display: flex;
+    position: relative;
+    padding: 10px 0;
+    justify-content: center;
+    margin-top: 10px;
+
+    &__item {
+        font-size: 75%;
+        padding: 3px 20px;
+        border-radius: 8px;
+        color: #7b7da3;
+        cursor: pointer;
+        transition: 300ms all ease-in-out;
+        margin: 0 5px;
+
+        &--active {
+            background: #5bbeff;
+            color: #fff;
+        }
+
+        &:hover:not(&--active) {
+            background: #cfd2e1;
+            color: #fff;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start;
+    }
+}
