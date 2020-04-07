@@ -1,6 +1,47 @@
 .textfield {
-    // border: 1px dashed black;
+    border: 1px solid #e7edfa;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+
     & * {
+        display: inline-flex;
+    }
+
+    &__label {
+        color: #9ea4c4;
+        font-size: 81.25%;
+        user-select: none;
+        // line-height: 1;
+    }
+
+    &__seprator {
+        background: #e7edfa;
+        width: 1px;
+        height: 20px;
+        margin: 0px 29px;
+    }
+
+    &__input,
+    .ms-TextField-field {
+        border: none;
+        width: 100%;
         outline: none;
+        font-size: 75%;
+
+        &::placeholder {
+            color: #cfd2e1;
+        }
+    }
+    & svg {
+        height: 18px;
+        width: 18px;
+        stroke: #9ea4c4;
+        fill: #9ea4c4;
+        stroke-width: 4px;
+        position: relative;
     }
 }

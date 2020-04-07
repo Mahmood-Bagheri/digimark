@@ -1,2 +1,10 @@
-import { ITextFieldProps } from "office-ui-fabric-react/lib/TextField";
-export interface ITextfield extends ITextFieldProps {}
+import { ChangeEvent } from "react";
+
+interface IInputBase {
+    label?: string | React.ReactNode;
+    onChange: (ev: ChangeEvent<HTMLInputElement>) => void;
+}
+
+export interface ITextfield
+    extends Omit<React.HtmlHTMLAttributes<HTMLDivElement | HTMLSpanElement>, keyof IInputBase>,
+        IInputBase {}
