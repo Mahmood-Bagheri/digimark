@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.8;
+    font-size: 1rem;
+    background: #fbfcff;
+    font-family: dana;
+    direction: rtl;
+    font-weight: 400;
+}
+
+* {
+    font-family: dana;
+}
+
+:root {
+    --var-red: #ff6363;
+    --var-shadow: #8d8dd610;
+}
+
+::selection {
+    color: #7b7da3;
+    background: #cfd2e1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 4px !important;
+    height: 4px !important;
+    border-radius: 100px !important;
+    -webkit-border-radius: 100px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7b7da3 !important;
+    border-radius: 100px !important;
+    -webkit-border-radius: 100px !important;
+}
