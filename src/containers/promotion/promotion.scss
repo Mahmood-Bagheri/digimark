@@ -1,0 +1,10 @@
+.promotion {
+    display: block;
+    height: 45px;
+    background: url("/assets/images/promotion.svg") center no-repeat;
+    background-size: cover;
+    img {
+        // object-fit: contain;
+        max-width: 100%;
+    }
+}
