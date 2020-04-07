@@ -1,0 +1,25 @@
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.035 56.163">
+                    <g id="Group_13" data-name="Group 13" transform="translate(1.5 1.5)">
+                        <ellipse
+                            id="Oval"
+                            cx="19.076"
+                            cy="19.133"
+                            rx="19.076"
+                            ry="19.133"
+                            transform="translate(1 1)"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                            fill="none"
+                        />
+                        <path
+                            id="Path"
+                            d="M12.325,12.343.257.662"
+                            transform="translate(38.675 38.785)"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                        />
+                    </g>
+                </svg>
