@@ -1,0 +1,17 @@
+.features-primary {
+    background: #fff;
+    &__item {
+    }
+    &__image {
+        height: 40px;
+        width: 40px;
+    }
+
+    &__text {
+        margin-top: 10px;
+        font-weight: 300;
+        color: #2b376f;
+        font-size: 75%;
+        text-align: center;
+    }
+}
