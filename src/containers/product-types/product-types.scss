@@ -1,0 +1,18 @@
+.product-types {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    &__icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    &__text {
+        margin-top: 10px;
+        font-weight: 300;
+        color: #2b376f;
+        font-size: 75%;
+    }
+}
