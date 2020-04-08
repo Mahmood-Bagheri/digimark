@@ -1,0 +1,30 @@
+.links {
+    background: #d2d7e3;
+    padding: 10px;
+
+    &__title {
+        font-size: 87.5%;
+        color: #6a7287;
+        margin-bottom: 10px;
+    }
+
+    &__item {
+        font-size: 75%;
+        color: #757c8e;
+        font-weight: 300;
+    }
+
+    &__text {
+        font-size: 75%;
+        color: #757c8e;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .links {
+        &__text {
+            margin-top: 10px;
+        }
+    }
+}
