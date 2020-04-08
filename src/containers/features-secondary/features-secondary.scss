@@ -1,0 +1,28 @@
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        color: #2b376f;
+        font-size: 87.5%;
+        text-align: right;
+    }
+    &__description {
+        color: #9ea4c4;
+        font-size: 75%;
+        font-weight: 300;
+    }
+
+    &__image {
+        align-self: center;
+        height: 80px;
+        width: 80px;
+    }
+}
