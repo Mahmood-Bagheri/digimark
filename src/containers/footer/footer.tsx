@@ -2,6 +2,7 @@ import React from "react";
 import { FooterLinks } from "containers/footer-links";
 import { TermsText } from "containers/terms-text";
 import { Textfield } from "components/Textfield";
+import { FeaturesPrimary } from "containers/features-primary";
 import "./footer.scss";
 
 interface Props {}
@@ -9,7 +10,8 @@ interface Props {}
 export const Footer = (props: Props) => {
     return (
         <>
-            <div className="footer pt-4">
+            <FeaturesPrimary />
+            <div className="footer pt-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-lg-8">
