@@ -1,0 +1,29 @@
+.brand-card {
+    box-shadow: 0 12px 26px #8d8dd610;
+    padding: 40px 10px;
+    border-radius: 23px;
+    transition: 300ms all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    min-height: 120px;
+
+    cursor: pointer;
+
+    &__brand {
+        max-width: 100%;
+        // height: 34px;
+        transition: 300ms all ease-in-out;
+    }
+
+    &:hover {
+        background: #5bbeff;
+        box-shadow: 0 3px 6px #5bbeff50;
+    }
+
+    &:hover &__brand {
+        transition: 300ms all ease-in-out;
+        filter: brightness(0) invert(1);
+    }
+}
