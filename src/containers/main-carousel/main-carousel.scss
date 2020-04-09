@@ -1,0 +1,18 @@
+.carousel {
+    &__slide {
+        border-radius: 10px;
+        height: 350px;
+        object-fit: contain;
+    }
+}
+.swiper-pagination-bullet {
+    transition: 300ms all ease-in-out;
+    background: #000;
+    outline: none;
+}
+
+.swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 10px;
+    transition: 300ms all ease-in-out;
+}
