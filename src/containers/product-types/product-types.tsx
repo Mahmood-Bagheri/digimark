@@ -4,10 +4,10 @@ import "./product-types.scss";
 
 export const ProductTypes = (props: {}) => {
     return (
-        <div className="container">
+        <div className="my-4">
             <div className="row">
                 <div className="col-6 col-sm-4 col-md">
-                    <Card>
+                    <Card className="product-types-card">
                         <div className="product-types">
                             <img
                                 className="product-types__icon"
@@ -19,7 +19,7 @@ export const ProductTypes = (props: {}) => {
                     </Card>
                 </div>
                 <div className="col-6 col-sm-4 col-md">
-                    <Card>
+                    <Card className="product-types-card">
                         <div className="product-types">
                             <img
                                 className="product-types__icon"
@@ -31,7 +31,7 @@ export const ProductTypes = (props: {}) => {
                     </Card>
                 </div>
                 <div className="col-6 col-sm-4 col-md">
-                    <Card>
+                    <Card className="product-types-card">
                         <div className="product-types">
                             <img
                                 className="product-types__icon"
@@ -43,7 +43,7 @@ export const ProductTypes = (props: {}) => {
                     </Card>
                 </div>
                 <div className="col-6 col-sm-4 col-md">
-                    <Card>
+                    <Card className="product-types-card">
                         {" "}
                         <div className="product-types">
                             <img
@@ -56,7 +56,7 @@ export const ProductTypes = (props: {}) => {
                     </Card>
                 </div>
                 <div className="col-6 col-sm-4 col-md">
-                    <Card>
+                    <Card className="product-types-card">
                         <div className="product-types">
                             <img
                                 className="product-types__icon"
@@ -68,7 +68,7 @@ export const ProductTypes = (props: {}) => {
                     </Card>
                 </div>
                 <div className="col-6 col-sm-4 col-md">
-                    <Card>
+                    <Card className="product-types-card">
                         <div className="product-types">
                             <img
                                 className="product-types__icon"
@@ -80,7 +80,7 @@ export const ProductTypes = (props: {}) => {
                     </Card>
                 </div>
                 <div className="col-6 col-sm-4 col-md">
-                    <Card>
+                    <Card className="product-types-card">
                         <div className="product-types">
                             <img
                                 className="product-types__icon"
