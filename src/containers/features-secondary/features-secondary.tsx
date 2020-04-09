@@ -5,7 +5,7 @@ import "./features-secondary.scss";
 export const FeaturesSecondary = (props: {}) => {
     return (
         <div>
-            <div className="container mt-3">
+            <div className="container">
                 <div className="row">
                     <div className="col-12 col-md-4">
                         <Card>
