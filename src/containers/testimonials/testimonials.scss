@@ -1,0 +1,26 @@
+.testimonials {
+    display: flex;
+
+    &__profile {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: #9ea4c4;
+    }
+    &__user {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+
+    &__name {
+        color: #2b376f;
+        font-size: 87.5%;
+    }
+
+    &__comment {
+        color: #7b7da3;
+        font-size: 75%;
+        font-weight: 300;
+    }
+}
