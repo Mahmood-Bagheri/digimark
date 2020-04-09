@@ -2,7 +2,7 @@ interface IProductBase {
     /**
      * product image url(s)
      */
-    image: string[] | string;
+    image: string;
     /**
      * product title
      */
