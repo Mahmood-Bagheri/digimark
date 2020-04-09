@@ -1,0 +1,15 @@
+.recent-posts-card {
+    height: 300px;
+
+    .swiper-pagination {
+        position: relative;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #5bbeff;
+    }
+
+    .swiper-pagination-bullet {
+        background: #d6efff;
+    }
+}
