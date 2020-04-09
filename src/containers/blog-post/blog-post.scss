@@ -2,7 +2,8 @@
     display: flex;
     &__image {
         border-radius: 23px;
-        max-width: 100px;
+        height: 100px;
+        width: 100px;
     }
 
     &__content {

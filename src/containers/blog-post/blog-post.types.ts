@@ -28,6 +28,11 @@ interface IBlogPostBase {
      * blog post page  url
      */
     url: string;
+
+    /**
+     * message shown bottom of the card as read more
+     */
+    linkText: string;
 }
 
 declare interface IBlogPost

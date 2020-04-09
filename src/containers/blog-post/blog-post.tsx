@@ -3,10 +3,10 @@ import { Card } from "components/Card";
 import "./blog-post.scss";
 
 export const BlogPost: FunctionComponent<Partial<IBlogPost>> = (props) => {
-    const { title, shortDesc, date } = props;
+    const { title, shortDesc, date, linkText } = props;
 
     return (
-        <Card>
+        <Card link={linkText} className="pb-3 pb-sm-3 pb-lg-3">
             <div className="post">
                 <div className="post__image-time">
                     {renderImage()}
