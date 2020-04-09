@@ -6,7 +6,7 @@ export const MainLayout: FunctionComponent = (props) => {
     return (
         <>
             <Header />
-            <div className="container py-2">{props.children}</div>
+            <div className="container py-3">{props.children}</div>
             <Footer />
         </>
     );
