@@ -3,10 +3,10 @@ import classnames from "classnames";
 import "./Card.scss";
 
 export const Card: FunctionComponent<Partial<ICard>> = (props) => {
-    const { link, title, children, className } = props;
+    const { link, title, children, className, ...restProps } = props;
 
     return (
-        <div className={classnames("card mb-2", className)}>
+        <div className={classnames("card mb-2", className)} {...restProps}>
             {renderTitle(props)}
             <div className="card__body">{children}</div>
             {renderAction(props)}
