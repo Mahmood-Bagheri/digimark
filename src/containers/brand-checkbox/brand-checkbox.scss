@@ -1,0 +1,25 @@
+.brand-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+    &__checkbox {
+        .ms-Checkbox-checkbox {
+            border-radius: 8px;
+            // background: #5bbeff;
+            border: #e7edfa 1px solid;
+            margin: 0;
+        }
+    }
+
+    &__label {
+        color: #9ea4c4;
+        font-size: 75%;
+        margin-right: 10px;
+        font-weight: 300;
+    }
+}
+p {
+    margin: 0;
+}
