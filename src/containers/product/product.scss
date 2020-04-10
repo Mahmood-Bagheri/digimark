@@ -4,10 +4,8 @@
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 12px 26px #8d8dd610;
-    margin: 100px 0;
     background: #fff;
     cursor: pointer;
-    // width: 200px;
 
     &__content {
         padding: 20px;
@@ -18,9 +16,8 @@
     }
     &__image {
         height: 200px;
-        object-fit: fill;
+        object-fit: cover;
         border-bottom-left-radius: 50px;
-
         box-shadow: 0 12px 26px #8d8dd640;
         position: relative;
 
