@@ -73,7 +73,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            // background: #000;
+            position: relative;
+
+            &:not(:last-child) {
+                &:before {
+                    content: "";
+                    height: 100%;
+                    width: 1px;
+                    background: #cfd2e1;
+                    top: 50%;
+                    right: 100%;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                }
+            }
         }
     }
 }
@@ -86,6 +99,18 @@
         &__whatsapp {
             width: 100%;
             margin: 5px 0;
+        }
+    }
+
+    .footer {
+        &__description {
+            .text {
+                &:not(:last-child) {
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
