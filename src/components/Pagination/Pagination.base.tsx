@@ -4,7 +4,7 @@ import classnames from "classnames";
 import "./Pagination.scss";
 
 export const Pagination: FunctionComponent<IPagination> = (props) => {
-    const { count, perPage, getCurrent } = props;
+    const { count, perPage, getCurrent, className, ...restProps } = props;
     const totalPages = Math.floor(count / perPage);
     const [currentPage, setCurrentPage] = useState<number>(1);
 
@@ -23,12 +23,12 @@ export const Pagination: FunctionComponent<IPagination> = (props) => {
 
     const onPageButtonClick = useCallback((e: number) => setCurrent(e), []);
 
-    if (totalPages === 1) {
+    if (totalPages <= 1) {
         return null;
     }
 
     return (
-        <div className="pagination">
+        <div className={classnames("pagination", className)} {...restProps}>
             <button className="pagination__prev" disabled={isPrevButtonDisabled} onClick={prevPage}>
                 قبلی
             </button>
