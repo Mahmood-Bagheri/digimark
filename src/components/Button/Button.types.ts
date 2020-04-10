@@ -1,3 +1,8 @@
-import { IButtonProps } from "office-ui-fabric-react";
-
-export interface IButton extends IButtonProps {}
+export enum ButtonSize {
+    large,
+    normal,
+}
+export interface IButton extends React.HTMLAttributes<HTMLButtonElement> {
+    size?: ButtonSize;
+    block?: boolean;
+}
