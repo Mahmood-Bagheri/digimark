@@ -3,6 +3,7 @@ import { MainLayout } from "containers/main-layout";
 import { SearchCard } from "containers/search-card";
 import { BlogPost } from "containers/blog-post";
 import { BlogPost as BlogPostData } from "data/BlogPost";
+import { Pagination } from "components/Pagination";
 export function BlogPage() {
     const [filter, setFilter] = useState("");
     const [posts, setPosts] = useState(BlogPostData);
@@ -33,6 +34,8 @@ export function BlogPage() {
                             </div>
                         ))}
                     </div>
+
+                    <Pagination count={10} perPage={10} getCurrent={(currentPage) => console.log(currentPage)} />
                 </div>
             </MainLayout>
         </>
