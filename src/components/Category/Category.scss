@@ -1,0 +1,21 @@
+.category {
+    color: #9ea4c4;
+    background: #e7edfa;
+    display: inline-block;
+    font-size: 62.5%;
+    border-radius: 8px;
+    padding: 4px 10px;
+    transition: 300ms all ease-in-out;
+    user-select: none;
+    position: relative;
+    &:hover {
+        background: #9ea4c4;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    &:not(:first-child),
+    &:not(:last-child) {
+        margin: 5px;
+    }
+}
