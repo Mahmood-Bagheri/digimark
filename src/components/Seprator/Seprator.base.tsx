@@ -1,6 +1,10 @@
 import * as React from "react";
 import "./Seprator.scss";
+import classnames from "classnames";
 
-export const Seprator = () => {
-    return <div className="seprator"></div>;
+interface ISeprator extends React.HTMLAttributes<HTMLDivElement> {}
+
+export const Seprator: React.FunctionComponent<ISeprator> = (props) => {
+    const { className, ...resProps } = props;
+    return <div className={classnames("seprator", className)}></div>;
 };
