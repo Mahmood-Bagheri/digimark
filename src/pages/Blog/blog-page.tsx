@@ -23,19 +23,24 @@ export function BlogPage() {
     return (
         <>
             <MainLayout>
-                <div className="row">
+                <div className="row ">
                     <div className="col-12 col-lg-3">
                         <SearchCard onChange={(e) => changeFilter(e.target.value)} />
                     </div>
-                    <div className="col-12 col-lg-9 d-flex flex-row flex-wrap">
+                    <div className="col-12 col-lg-9 d-flex flex-row flex-wrap justify-content-center">
                         {posts.map((item) => (
                             <div className="col-12 col-lg-6 p-0 px-lg-2">
                                 <BlogPost title={item.title} shortDesc={item.shortDesc} linkText="بیشتر بخوانید" />
                             </div>
                         ))}
-                    </div>
 
-                    <Pagination count={10} perPage={10} getCurrent={(currentPage) => console.log(currentPage)} />
+                        <Pagination
+                            className="mt-3"
+                            count={20}
+                            perPage={10}
+                            getCurrent={(currentPage) => console.log(currentPage)}
+                        />
+                    </div>
                 </div>
             </MainLayout>
         </>
