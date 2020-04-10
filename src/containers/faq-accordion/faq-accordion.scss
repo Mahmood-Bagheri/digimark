@@ -1,0 +1,29 @@
+.accordion {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        color: #7b7da3;
+        font-size: 90%;
+    }
+
+    &__description {
+        margin-top: 10px;
+        font-size: 75%;
+        font-weight: 300;
+        text-align: justify;
+        color: #7b7da3;
+    }
+
+    &__icon {
+        stroke-width: 2;
+        height: 20px;
+        width: 20px;
+        stroke: #7b7da3;
+        margin: 0;
+        padding: 0;
+    }
+}
