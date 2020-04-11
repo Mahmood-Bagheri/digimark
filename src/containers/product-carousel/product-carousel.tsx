@@ -1,7 +1,7 @@
 import React from "react";
 import Swiper from "react-id-swiper";
-import "./product-carousel.scss";
 import { Product } from "containers/product";
+import "./product-carousel.scss";
 
 export const ProductsCarousel = () => {
     const params = {
@@ -30,63 +30,65 @@ export const ProductsCarousel = () => {
         },
     };
     return (
-        <Swiper {...params}>
-            <div>
-                <Product
-                    title="گوشی موبایل اپل iPhone XS Max 256GB "
-                    price={19.999}
-                    image="https://dkstatics-public-2.digikala.com/digikala-products/111678863.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
-                    url="google.com"
-                />
-            </div>
-            <div>
-                <Product
-                    title="گوشی موبایل اپل iPhone XS Max 256GB "
-                    price={19.999}
-                    image="https://dkstatics-public-2.digikala.com/digikala-products/111678863.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
-                    url="google.com"
-                />
-            </div>
-            <div>
-                <Product
-                    title="گوشی موبایل اپل iPhone XS Max 256GB "
-                    price={19.999}
-                    image="https://dkstatics-public-2.digikala.com/digikala-products/111678863.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
-                    url="google.com"
-                />
-            </div>
-            <div>
-                <Product
-                    title="گوشی موبایل اپل iPhone XS Max 256GB "
-                    price={19.999}
-                    image="https://dkstatics-public-2.digikala.com/digikala-products/111678863.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
-                    url="google.com"
-                />
-            </div>
-            <div>
-                <Product
-                    title="گوشی موبایل اپل iPhone XS Max 256GB "
-                    price={19.999}
-                    image="https://dkstatics-public-2.digikala.com/digikala-products/111678863.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
-                    url="google.com"
-                />
-            </div>
-            <div>
-                <Product
-                    title="گوشی موبایل اپل iPhone XS Max 256GB "
-                    price={19.999}
-                    image="https://dkstatics-public-2.digikala.com/digikala-products/111678863.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
-                    url="google.com"
-                />
-            </div>
-            <div>
-                <Product
-                    title="گوشی موبایل اپل iPhone XS Max 256GB "
-                    price={19.999}
-                    image="https://dkstatics-public-2.digikala.com/digikala-products/111678863.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
-                    url="google.com"
-                />
-            </div>
-        </Swiper>
+        <div className="product-carousel">
+            <Swiper {...params}>
+                <div>
+                    <Product
+                        title="گوشی موبایل اپل iPhone XS Max 256GB "
+                        price={19.999}
+                        image="/assets/images/t-shirt.jpg"
+                        url="google.com"
+                    />
+                </div>
+                <div>
+                    <Product
+                        title="گوشی موبایل اپل iPhone XS Max 256GB "
+                        price={19.999}
+                        image="/assets/images/t-shirt.jpg"
+                        url="google.com"
+                    />
+                </div>
+                <div>
+                    <Product
+                        title="گوشی موبایل اپل iPhone XS Max 256GB "
+                        price={19.999}
+                        image="/assets/images/t-shirt.jpg"
+                        url="google.com"
+                    />
+                </div>
+                <div>
+                    <Product
+                        title="گوشی موبایل اپل iPhone XS Max 256GB "
+                        price={19.999}
+                        image="/assets/images/t-shirt.jpg"
+                        url="google.com"
+                    />
+                </div>
+                <div>
+                    <Product
+                        title="گوشی موبایل اپل iPhone XS Max 256GB "
+                        price={19.999}
+                        image="/assets/images/t-shirt.jpg"
+                        url="google.com"
+                    />
+                </div>
+                <div>
+                    <Product
+                        title="گوشی موبایل اپل iPhone XS Max 256GB "
+                        price={19.999}
+                        image="/assets/images/t-shirt.jpg"
+                        url="google.com"
+                    />
+                </div>
+                <div>
+                    <Product
+                        title="گوشی موبایل اپل iPhone XS Max 256GB "
+                        price={19.999}
+                        image="/assets/images/t-shirt.jpg"
+                        url="google.com"
+                    />
+                </div>
+            </Swiper>
+        </div>
     );
 };
