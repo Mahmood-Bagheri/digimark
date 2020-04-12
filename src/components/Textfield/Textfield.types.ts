@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react";
+import { ChangeEvent, InputHTMLAttributes } from "react";
 
 interface IInputBase {
     label?: string | React.ReactNode;
@@ -6,5 +6,5 @@ interface IInputBase {
 }
 
 export interface ITextfield
-    extends Omit<React.HtmlHTMLAttributes<HTMLDivElement | HTMLSpanElement>, keyof IInputBase>,
+    extends Omit<React.InputHTMLAttributes<HTMLInputElement | HTMLDivElement>, keyof IInputBase>,
         IInputBase {}
