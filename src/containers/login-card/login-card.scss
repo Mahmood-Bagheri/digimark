@@ -1,0 +1,61 @@
+.login-card-container {
+    display: flex;
+    justify-content: center;
+
+    .login {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        margin: 0 auto;
+
+        &__logo {
+            display: block;
+            margin: 10px auto;
+        }
+
+        &__text {
+            font-weight: 600;
+            color: #7b7da3;
+            text-align: center;
+        }
+
+        &__textfield {
+            box-shadow: 0 3px 9px #8d8dd610;
+        }
+
+        &__remember {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 10px;
+
+            p {
+                font-weight: 400;
+                color: #7b7da3;
+                font-size: 75%;
+            }
+        }
+
+        &__register-text {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 87.5;
+            p {
+                color: #7b7da3;
+            }
+        }
+
+        &__question {
+            color: #ff6363;
+        }
+
+        .ms-Checkbox-checkbox {
+            border-radius: 8px;
+            border: #e7edfa 1px solid;
+            margin: 0;
+        }
+    }
+}
