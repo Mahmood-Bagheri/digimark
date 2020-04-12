@@ -1,0 +1,33 @@
+.dedicated-design-card {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    padding: 10px 20px;
+    color: #2b376f;
+    transition: 300ms all ease-in-out;
+
+    &__img {
+        width: 80px;
+        transition: 300ms all ease-in-out;
+    }
+
+    &__text {
+        font-size: 75%;
+    }
+
+    &:hover:not(&--disabled) {
+        background: #5bbeff;
+        box-shadow: 0 3px 6px #5bbeff50;
+        color: #fff;
+    }
+
+    &:hover:not(&--disabled) &__img {
+        transition: 300ms all ease-in-out;
+        filter: brightness(0) invert(1);
+    }
+
+    &--disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
