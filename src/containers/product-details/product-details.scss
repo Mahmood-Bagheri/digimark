@@ -1,0 +1,139 @@
+.product-details {
+    background: #fff;
+    box-shadow: 0 12px 26px var(--var-shadow);
+    border-radius: 25px;
+    padding: 10px;
+    color: #7b7da3;
+
+    .seprator--vertical {
+        height: 100%;
+        width: 1px;
+        background: #e7edfa;
+    }
+    .title {
+        font-size: 100%;
+        font-weight: 700;
+    }
+
+    .rating {
+        .ratingButton-42:hover .ms-RatingStar-front {
+        }
+
+        .ratingStarFront-50 {
+            color: #ffb534;
+        }
+
+        .text {
+            font-size: 75%;
+        }
+    }
+
+    .insight {
+        &__title {
+            font-size: 87.5%;
+            font-weight: 600;
+            display: inline;
+        }
+
+        span {
+            color: #5bbeff;
+            font-size: 82.5%;
+            font-weight: 500;
+            margin-right: 4px;
+        }
+    }
+
+    .colors {
+        &__title {
+            font-size: 87.5%;
+            font-weight: 500;
+        }
+        &__item {
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            background: #fd39fb;
+            cursor: pointer;
+
+            &:not(:first-child) {
+                margin-right: 10px;
+            }
+
+            &--selected {
+                background-image: url("/assets/images/icons/tick.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                border: #7b7da3 solid 1px;
+                background-size: 50%;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: 100%;
+                    border: 3px #fff solid;
+                }
+            }
+        }
+
+        .colors-container {
+            display: flex;
+        }
+    }
+
+    .sizes {
+    }
+
+    .pre-factor {
+        &__title {
+            font-size: 87.5%;
+            font-weight: 500;
+        }
+
+        &__param {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        &__key {
+            font-weight: 400;
+            font-size: 75%;
+        }
+
+        &__value {
+            font-size: 75%;
+        }
+
+        &__price {
+            font-size: 87.5%;
+            font-weight: 600;
+        }
+
+        &__priceValue {
+            color: #5bbeff;
+            font-weight: 600;
+        }
+
+        &__final-price {
+            font-size: 100%;
+            font-weight: 600;
+        }
+
+        &__final-priceValue {
+            color: #5bbeff;
+            font-size: 100%;
+            font-weight: 700;
+        }
+    }
+
+    .carousel {
+    }
+
+    .mini-carousel {
+    }
+}
