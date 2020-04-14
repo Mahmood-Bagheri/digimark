@@ -1,0 +1,27 @@
+.product-image-carousel {
+    height: 100%;
+
+    .swiper-container {
+        flex: 1;
+        height: calc(100% - 80px);
+    }
+
+    .swiper-slide {
+        border-radius: 10px;
+    }
+    .child {
+        display: flex;
+        margin-top: 10px;
+
+        .swiper-slide {
+            height: 70px;
+            box-shadow: 0 12px 26px #8d8dd610;
+            max-width: 70px;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .product-image-carousel {
+        min-height: 400px;
+    }
+}
