@@ -1,13 +1,16 @@
 .login-card-container {
-    display: flex;
+    // display: flex;
     justify-content: center;
+    // min-width: 900px;
+    align-self: center;
 
     .login {
-        display: inline-flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         padding: 30px;
         margin: 0 auto;
+        // width: 900px;
 
         &__logo {
             display: block;

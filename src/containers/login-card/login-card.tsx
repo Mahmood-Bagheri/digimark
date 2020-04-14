@@ -13,6 +13,7 @@ export const LoginCard = (props: Props) => {
             <Card className="login">
                 <img className="login__logo" src="assets/icons/icon-en.svg" alt="logo" />
                 <div className="login__text">ورود به دیجی مارک</div>
+
                 <Textfield
                     className="login__textfield mt-2"
                     label="ایمیل یا شماره موبایل"
@@ -20,6 +21,7 @@ export const LoginCard = (props: Props) => {
                     onChange={(e) => {}}
                     dir={"ltr"}
                 />
+
                 <Textfield
                     className="login__textfield mt-2"
                     label="رمز عبور"
