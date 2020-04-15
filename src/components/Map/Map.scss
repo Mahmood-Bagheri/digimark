@@ -1,0 +1,14 @@
+.leaflet-container {
+    font: 12px/1.5 dana, Arial, Helvetica, sans-serif;
+    // font-family: dana !important;
+}
+
+.leaflet-map {
+    height: 300px;
+    border-radius: 26px;
+    box-shadow: 0 12px 26px var(--var-shadow);
+}
+
+.leaflet-control-attribution.leaflet-control {
+    display: none;
+}
