@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { SearchInResults } from "containers/search-in-results";
 import { Brandfilter } from "containers/brand-filter";
 import { Product } from "containers/product";
 
 export function Store() {
+    const [searchWord, setSearchWord] = useState("");
+
     return (
         <>
             <div className="row">
                 <div className="col-12 col-lg-3">
-                    <SearchInResults />
+                    <SearchInResults setSearchWord={(value) => setSearchWord(value)} />
                     <Brandfilter />
                 </div>
                 <div className="col-12 col-lg-9">
