@@ -72,7 +72,7 @@ export const Header = (props: {}) => {
                         </div>
                     </div>
                 </div>
-                <Seprator />
+                {/* <Seprator /> */}
                 <Navbar />
             </div>
         </>
