@@ -1,2 +1,26 @@
 .product-details-tab {
+    position: relative;
+    z-index: 2;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tab {
+        .linkIsSelected-62,
+        .link-72 {
+            &:hover {
+                background: none;
+            }
+        }
+
+        .linkIsSelected-62 {
+            transition: 300ms all ease-in-out;
+
+            &:after {
+                transition: 300ms all ease-in-out;
+            }
+        }
+    }
 }
