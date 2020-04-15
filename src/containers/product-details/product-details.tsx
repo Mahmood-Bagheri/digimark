@@ -57,7 +57,7 @@ export const ProductDetails = (props: Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-auto">
+                        <div className="col-auto p-0 mr-auto">
                             <div className="seprator--vertical"></div>
                         </div>
                         <div className="col-lg-5">
