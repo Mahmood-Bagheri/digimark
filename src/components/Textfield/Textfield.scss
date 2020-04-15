@@ -45,4 +45,10 @@
         stroke-width: 4px;
         position: relative;
     }
+
+    textarea {
+        width: 100%;
+        resize: vertical;
+        min-height: 100px;
+    }
 }
