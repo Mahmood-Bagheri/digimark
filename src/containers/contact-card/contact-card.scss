@@ -1,0 +1,13 @@
+.contact-card {
+    color: #7b7da3;
+    &__title {
+        font-size: 87.5%;
+        font-weight: 500;
+    }
+
+    &__description {
+        font-size: 75.5%;
+        margin-top: 10px;
+        font-weight: 300;
+    }
+}
