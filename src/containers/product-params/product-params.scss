@@ -1,2 +1,39 @@
 .product-params {
+    background: #fff;
+    margin-top: 10px;
+
+    &__title {
+        color: #7b7da3;
+        font-weight: 700;
+    }
+
+    &__description {
+        font-size: 87.5%;
+        color: #9ea4c4;
+        margin-bottom: 10px;
+    }
+
+    &__container {
+        display: flex;
+        font-size: 75.5%;
+        color: #7b7da3;
+        margin-bottom: 5px;
+        align-items: flex-start;
+    }
+
+    &__key {
+        background: #f5f8fd;
+        border-radius: 28px;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    &__value {
+        background: #f5f8fd;
+        border-radius: 28px;
+        padding: 10px;
+        flex: 3;
+        display: block;
+        margin-right: 10px;
+    }
 }
