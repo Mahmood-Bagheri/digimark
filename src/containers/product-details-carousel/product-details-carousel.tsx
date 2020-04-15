@@ -11,6 +11,11 @@ export const ProductDetailsCarousel = (props: Props) => {
     const gallerySwiperParams = {
         getSwiper: getGallerySwiper,
         spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
     };
 
     const thumbnailSwiperParams = {
