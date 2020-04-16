@@ -24,7 +24,7 @@ export const BlogPost: FunctionComponent<Partial<IBlogPost>> = (props) => {
     );
 
     function renderImage(): JSX.Element {
-        return <img className="post__image" src="assets/images/image.png" alt={""} />;
+        return <img className="post__image" src="assets/images/image.png" alt={title as string} />;
     }
 
     function renderIcon(): JSX.Element {
@@ -36,9 +36,9 @@ export const BlogPost: FunctionComponent<Partial<IBlogPost>> = (props) => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="feather feather-clock"
             >
                 <circle cx="12" cy="12" r="10"></circle>

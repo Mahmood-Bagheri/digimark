@@ -7,14 +7,15 @@ export const Pagination: FunctionComponent<IPagination> = (props) => {
     const { count, perPage, getCurrent, className, ...restProps } = props;
     const totalPages = Math.floor(count / perPage);
     const [currentPage, setCurrentPage] = useState<number>(1);
+    console.log("render from pagination");
 
     useEffect(() => {
         getCurrent(currentPage);
     }, [currentPage, getCurrent]);
 
-    const nexPage = useCallback(() => setCurrentPage(currentPage + 1), [currentPage]);
+    const nexPage = () => setCurrentPage(currentPage + 1);
 
-    const prevPage = useCallback(() => setCurrentPage(currentPage - 1), [currentPage]);
+    const prevPage = () => setCurrentPage(currentPage - 1);
 
     const setCurrent = (e: number) => setCurrentPage(e);
 
@@ -40,7 +41,7 @@ export const Pagination: FunctionComponent<IPagination> = (props) => {
     );
 
     function renderButtons(): JSX.Element | JSX.Element[] | null {
-        return new Array(totalPages).fill("null").map((item, index) => (
+        return new Array(totalPages).fill("").map((item, index) => (
             <div
                 key={index}
                 className={classnames("pagination__item", {

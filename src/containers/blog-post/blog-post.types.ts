@@ -1,4 +1,5 @@
-interface IBlogPostBase {
+declare interface IBlogPostBase {
+    id: number;
     /**
      * image url(s) of blog post
      */
