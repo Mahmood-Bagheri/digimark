@@ -11,7 +11,7 @@ export const Navbar = (props: Props) => {
                     <NavLink className="navbar__item col-auto" activeClassName="navbar__item--active" to="/" exact>
                         فروشگاه ها
                     </NavLink>
-                    <NavLink className="navbar__item col-auto" activeClassName="navbar__item--active" to="/store" exact>
+                    <NavLink className="navbar__item col-auto" activeClassName="navbar__item--active" to="/products">
                         محصولات
                     </NavLink>
                     <NavLink
@@ -25,6 +25,9 @@ export const Navbar = (props: Props) => {
 
                     <div className="navbar__item col-auto">سفارشات</div>
                     <div className="navbar__item col-auto">همکاری با ما</div>
+                    <NavLink className="navbar__item col-auto" activeClassName="navbar__item--active" to="/blog">
+                        بلاگ
+                    </NavLink>
                     <NavLink className="navbar__item col-auto" activeClassName="navbar__item--active" to="/about">
                         درباره ما
                     </NavLink>
