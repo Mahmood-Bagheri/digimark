@@ -1,0 +1,22 @@
+.product-brand-card {
+    // background: url("/assets/images/icons/brand-bg.svg") center no-repeat;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+
+    &__brand {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__url {
+        font-weight: 300;
+        max-width: 80%;
+        font-size: 75%;
+        text-align: center;
+        align-self: center;
+        display: block;
+        margin: 10px auto;
+    }
+}
