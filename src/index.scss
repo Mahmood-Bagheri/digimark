@@ -13,6 +13,15 @@ body {
     font-family: dana;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
 :root {
     --var-red: #ff6363;
     --var-shadow: #8d8dd610;
