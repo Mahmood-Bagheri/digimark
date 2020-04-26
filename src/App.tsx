@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import { MainLayout } from "containers/main-layout";
+// import { BrandProducts } from "pages/Brand-Products";
+import { Route, Switch } from "react-router-dom";
+// import { ProductPage } from "pages/Product";
+import { Loading } from "components/Loading";
+
+const BrandProducts = React.lazy(() =>
+    import("pages/Brand-Products").then(({ BrandProducts }) => ({ default: BrandProducts }))
+);
+
+const ProductPage = React.lazy(() => import("pages/Product").then(({ ProductPage }) => ({ default: ProductPage })));
+const BlogPage = React.lazy(() => import("pages/Blog").then(({ BlogPage }) => ({ default: BlogPage })));
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <MainLayout>
+                <Suspense fallback={<Loading />}>
+                    <Switch>
+                        <Route path="/products" exact component={BrandProducts} />
+                        <Route path="/blog" exact component={BlogPage} />
+                        <Route path="/products/:id" exact component={ProductPage} />
+                    </Switch>
+                </Suspense>
+            </MainLayout>
+        </>
+    );
 }
 
 export default App;
