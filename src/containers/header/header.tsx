@@ -4,6 +4,7 @@ import { Navbar } from "containers/navigation-bar";
 import { Seprator } from "components/Seprator";
 import { Promotion } from "containers/promotion";
 import "./header.scss";
+import { Link } from "react-router-dom";
 
 export const Header = (props: {}) => {
     return (
@@ -19,7 +20,7 @@ export const Header = (props: {}) => {
                             <Textfield
                                 label="جستجو"
                                 placeholder="نام کالا، برند و یا دسته بندی مورد نظر خود را جست و جو کنید"
-                                onChange={(e) => console.log(e)}
+                                onChange={e => console.log(e)}
                             />
                         </div>
                         <div className="icons col-12 col-lg-3">
@@ -48,7 +49,9 @@ export const Header = (props: {}) => {
                                             />
                                         </g>
                                     </svg>
-                                    <span>ورود / ثبت نام</span>
+                                    <span>
+                                        <Link to="/login">ورود / ثبت نام</Link>
+                                    </span>
                                 </div>
                                 <div className="icon icon--bagde" data-badge="2">
                                     <svg
