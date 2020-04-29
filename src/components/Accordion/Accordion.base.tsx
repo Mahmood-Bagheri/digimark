@@ -1,10 +1,10 @@
 import React, { FunctionComponent, useState } from "react";
-import { IAccordion } from "./Accordion.types";
+import { IFaq } from "./Accordion.types";
 import "./Accordion.scss";
 import { Card } from "components/Card";
 import classnames from "classnames";
 
-export const Accordion: FunctionComponent<IAccordion> = (props) => {
+export const Accordion: FunctionComponent<IFaq> = props => {
     const { description, question } = props;
 
     const [visible, setVisible] = useState<boolean>(false);
