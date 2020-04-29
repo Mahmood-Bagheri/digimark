@@ -2,14 +2,14 @@ import React, { FunctionComponent } from "react";
 import { Card } from "components/Card";
 import "./blog-post.scss";
 
-export const BlogPost: FunctionComponent<Partial<IBlogPost>> = (props) => {
-    const { title, shortDesc, date, linkText } = props;
+export const BlogPost: FunctionComponent<Partial<IBlogPost>> = props => {
+    const { title, shortDesc, date, linkText, imageUrl } = props;
 
     return (
         <Card link={linkText} className="pb-3 pb-sm-3 pb-lg-3">
             <div className="post">
                 <div className="post__image-time">
-                    {renderImage()}
+                    <img className="post__image" src={imageUrl as string} alt={title as string} />
                     <div className="post__time">
                         {renderIcon()}
                         {renderDate()}
@@ -22,10 +22,6 @@ export const BlogPost: FunctionComponent<Partial<IBlogPost>> = (props) => {
             </div>
         </Card>
     );
-
-    function renderImage(): JSX.Element {
-        return <img className="post__image" src="assets/images/image.png" alt={title as string} />;
-    }
 
     function renderIcon(): JSX.Element {
         return (
