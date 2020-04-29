@@ -35,7 +35,7 @@ export const ProductDetails = (props: Props) => {
                             </div>
                             <div className="col-auto">
                                 <div className="insight__title">دسته بندی: </div>
-                                <span>تی شرت</span>
+                                <span>سخت افزار</span>
                             </div>
                             <div className="col-auto">
                                 <div className="insight__title">فروشگاه:</div>
