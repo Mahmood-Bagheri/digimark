@@ -43,19 +43,33 @@ export const ProductDetailsCarousel = (props: Props) => {
     return (
         <div className="product-image-carousel">
             <Swiper {...gallerySwiperParams}>
-                <div style={{ backgroundImage: "url(/assets/images/t-shirt.jpg)", backgroundSize: "cover" }} />
-                <div style={{ backgroundImage: "url(/assets/images/clothes.jpg)", backgroundSize: "cover" }} />
-                <div style={{ backgroundImage: "url(/assets/images/t-shirt.jpg)", backgroundSize: "cover" }} />
-                <div style={{ backgroundImage: "url(/assets/images/clothes.jpg)", backgroundSize: "cover" }} />
-                <div style={{ backgroundImage: "url(/assets/images/t-shirt.jpg)", backgroundSize: "cover" }} />
+                {new Array(4).fill("").map((item, index) => {
+                    return (
+                        <div
+                            style={{
+                                backgroundImage: `url(https://source.unsplash.com/collection/4481886/${Math.floor(
+                                    Math.random() * 100
+                                )})`,
+                                backgroundSize: "cover",
+                            }}
+                        />
+                    );
+                })}
             </Swiper>
 
             <Swiper {...thumbnailSwiperParams}>
-                <div style={{ backgroundImage: "url(/assets/images/t-shirt.jpg)", backgroundSize: "cover" }} />
-                <div style={{ backgroundImage: "url(/assets/images/clothes.jpg)", backgroundSize: "cover" }} />
-                <div style={{ backgroundImage: "url(/assets/images/t-shirt.jpg)", backgroundSize: "cover" }} />
-                <div style={{ backgroundImage: "url(/assets/images/clothes.jpg)", backgroundSize: "cover" }} />
-                <div style={{ backgroundImage: "url(/assets/images/t-shirt.jpg)", backgroundSize: "cover" }} />
+                {new Array(4).fill("").map((item, index) => {
+                    return (
+                        <div
+                            style={{
+                                backgroundImage: `url(https://source.unsplash.com/collection/4481886/${Math.floor(
+                                    Math.random() * 100
+                                )})`,
+                                backgroundSize: "cover",
+                            }}
+                        />
+                    );
+                })}
             </Swiper>
         </div>
     );
