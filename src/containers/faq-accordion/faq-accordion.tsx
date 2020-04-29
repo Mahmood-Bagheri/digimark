@@ -1,14 +1,13 @@
 import React, { FunctionComponent } from "react";
 import { Accordion } from "components/Accordion";
+import { FaqData } from "data/faq";
 
-export const FaqAccordion: FunctionComponent = (props) => {
+export const FaqAccordion: FunctionComponent = props => {
     return (
         <>
-            <Accordion question="سوال؟" description="جواب" />
-            <Accordion question="سوال؟" description="جواب" />
-            <Accordion question="سوال؟" description="جواب" />
-            <Accordion question="سوال؟" description="جواب" />
-            <Accordion question="سوال؟" description="جواب" />
+            {FaqData.map(item => {
+                return <Accordion {...item} />;
+            })}
         </>
     );
 };
