@@ -1,1 +1,1 @@
-export * from "./store-page";
+export { default } from "./store-page";

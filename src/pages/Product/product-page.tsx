@@ -5,7 +5,7 @@ import { ProductDetailsTab } from "containers/product-details-tab";
 
 interface Props {}
 
-export const ProductPage = (props: Props) => {
+export default function ProductPage(props: Props) {
     return (
         <div>
             <ProductDetails />
@@ -15,4 +15,4 @@ export const ProductPage = (props: Props) => {
             <ProductDetailsTab />
         </div>
     );
-};
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { MainLayout } from "containers/main-layout";
 import { BrandCard } from "containers/brand-card/brand-card";
-export function BrandsPage() {
+export default function BrandsPage() {
     return (
         <div className="row">
             <div className="col-6 col-md-4 col-lg-2 mb-2">

@@ -4,7 +4,7 @@ import { Product } from "containers/product";
 import { ProductBrandCard } from "containers/product-brand-card";
 import { Link } from "react-router-dom";
 
-export function BrandProducts() {
+export default function BrandProducts() {
     const [searchWord, setSearchWord] = useState("");
 
     return (
@@ -12,7 +12,7 @@ export function BrandProducts() {
             <div className="row">
                 <div className="col-12 col-lg-3">
                     <ProductBrandCard />
-                    <SearchInResults setSearchWord={(value) => setSearchWord(value)} />
+                    <SearchInResults setSearchWord={value => setSearchWord(value)} />
                 </div>
                 <div className="col-12 col-lg-9">
                     <div className="row">
