@@ -30,7 +30,7 @@ export const Footer = (props: Props) => {
                                 <div className="text col-12 col-md-4">
                                     ما هر روز از ساعت 9 تا 18 تو دفترمون هستیم و تقریبا 24 ساعته تو فضای مجازی آنلاینیم
                                 </div>
-                                <div className="text col-12 col-md-4">شماره تماس: 09331111111</div>
+                                <div className="text col-12 col-md-4">شماره تماس: 09334319058</div>
                                 <div className="text col-12 col-md-4">آدرس ما: مشهد، خیابان سی ام</div>
                             </div>
                             <div className="footer__social my-4">
@@ -63,7 +63,7 @@ export const Footer = (props: Props) => {
                             </div>
                         </div>
                         <div className="col-12 col-lg-4">
-                            <Textfield label="دانلود" placeholder="ارسال لینک دانلود" onChange={(e) => {}} />
+                            <Textfield label="دانلود" placeholder="ارسال لینک دانلود" onChange={e => {}} />
                             <div className="footer__download mt-2">
                                 <div className="row">
                                     <div className="col-6 pl-1">
