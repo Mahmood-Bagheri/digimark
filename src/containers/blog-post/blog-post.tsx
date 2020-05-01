@@ -7,17 +7,17 @@ export const BlogPost: FunctionComponent<Partial<IBlogPost>> = props => {
 
     return (
         <Card link={linkText} className="pb-3 pb-sm-3 pb-lg-3">
-            <div className="post">
-                <div className="post__image-time">
-                    <img className="post__image" src={imageUrl as string} alt={title as string} />
-                    <div className="post__time">
+            <div className="blog-post">
+                <div className="blog-post__image-time">
+                    <img className="blog-post__image" src={imageUrl as string} alt={title as string} />
+                    <div className="blog-post__time">
                         {renderIcon()}
                         {renderDate()}
                     </div>
                 </div>
-                <div className="post__content">
+                <div className="blog-post__content">
                     {renderTitle()}
-                    <div className="post__description">{renderShortDescription()}</div>
+                    <div className="blog-post__description">{renderShortDescription()}</div>
                 </div>
             </div>
         </Card>
@@ -48,7 +48,7 @@ export const BlogPost: FunctionComponent<Partial<IBlogPost>> = props => {
     }
 
     function renderTitle(): JSX.Element {
-        return <div className="post__title">{title}</div>;
+        return <div className="blog-post__title">{title}</div>;
     }
 
     function renderShortDescription(): JSX.Element {
