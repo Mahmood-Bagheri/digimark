@@ -25,6 +25,8 @@ const Store = lazy(() => import("pages/Store"));
 
 const Product = lazy(() => import("pages/Product"));
 
+const Post = lazy(() => import("pages/Post"));
+
 function App() {
     return (
         <>
@@ -35,6 +37,7 @@ function App() {
                         <Route path="/products" exact component={Store} />
                         <Route path="/products/:id" exact component={Product} />
                         <Route path="/blog" exact component={Blog} />
+                        <Route path="/blog/:id" exact component={Post} />
                         <Route path="/contact" exact component={Contact} />
                         <Route path="/about" exact component={About} />
                         <Route path="/brands" exact component={Brands} />
