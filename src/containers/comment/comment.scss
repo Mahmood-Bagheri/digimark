@@ -1,0 +1,51 @@
+.comment {
+    display: flex;
+    margin-top: 10px;
+    &__image {
+        max-width: 100px;
+        border-radius: 10px;
+    }
+
+    &__author {
+        font-weight: 500;
+    }
+
+    &__reply-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__reply-text {
+        font-size: 75%;
+    }
+
+    &__date {
+        font-size: 75%;
+        margin-top: 10px;
+    }
+
+    &__body {
+        font-size: 75%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--reply {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comment {
+        &--reply {
+            margin-right: 0;
+        }
+
+        &__image {
+            max-width: 60px;
+        }
+    }
+}

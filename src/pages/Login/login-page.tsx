@@ -1,5 +1,4 @@
 import React from "react";
-import { MainLayout } from "containers/main-layout";
 import { LoginCard } from "containers/login-card";
 
 export default function Login() {
