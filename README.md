@@ -1,3 +1,7 @@
+## Hi 😁
+The Digimark project ***has no functionality*** or something like api call
+I just developed it myself and all of it is just the UI.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
